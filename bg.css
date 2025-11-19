@@ -1,0 +1,31 @@
+:root {
+    --c1: #3464b0;
+    --c2: #c03333;
+    --c3: #313647;
+    --base: #0f172a;
+}
+
+/* Animated gradient background */
+.app-bg {
+    min-height: 100vh;
+    background: linear-gradient(120deg, var(--c1), var(--c2), var(--c3));
+    background-size: 200% 200%;
+    animation: bgShift 18s ease-in-out infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+/* animation property's */
+@keyframes bgShift {
+    0%, 100% { background-position: 0% 50%; }
+    50%      { background-position: 100% 50%; }
+}
+
+/* Overlay for readability */
+.app-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(closest-side, rgba(15,23,42,0.6), rgba(15,23,42,0.9));
+}
+
