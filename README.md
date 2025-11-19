@@ -1,2 +1,2 @@
 # css-bg
-1st of my bg i have created using Ai
+First of CSS-bg, I have created using Ai.
