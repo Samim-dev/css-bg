@@ -5,6 +5,10 @@
     --base: #0f172a;
 }
 
+body {
+    margin: 0;
+}
+
 /* Animated gradient background */
 .app-bg {
     margin: 0;
@@ -29,6 +33,7 @@
     inset: 0;
     background: radial-gradient(closest-side, rgba(15,23,42,0.6), rgba(15,23,42,0.9));
 }
+
 
 
 
